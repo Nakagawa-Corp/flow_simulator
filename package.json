@@ -1,0 +1,30 @@
+{
+  "name": "btc-jpy-flow-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "npm run build && npm start",
+    "build": "vite build",
+    "start": "node server/src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.100.10",
+    "react": "19.2.5",
+    "react-dom": "19.2.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.1.13",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "tailwindcss": "4.1.13",
+    "typescript": "5.9.3",
+    "vite": "7.3.8"
+  }
+}
