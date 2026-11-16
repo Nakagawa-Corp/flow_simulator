@@ -1,4 +1,4 @@
-# 約定強弱シミュレーター
+# 約定シミュレーター
 
 bitFlyer Lightning 現物の BTC/JPY 約定を集計し、買い継続・拮抗・売り継続の3シナリオで到達価格帯を試算します。15分・30分・1時間・4時間の買い比率、出来高、買い／売り効率を比較できます。注文機能はありません。
 
@@ -29,22 +29,5 @@ npm run typecheck
 npm test
 npm run build
 ```
-
-## GitHubでソースを公開する
-
-1. このZIPを展開し、`package.json` のあるディレクトリを開きます。
-2. GitHubに空のリポジトリを作成し、公開範囲を選びます。第三者に利用や改変を許諾する場合は、公開者が使用するライセンスを決めて `LICENSE` を追加します。
-3. 下記のURLを作成したリポジトリのURLに置き換えて実行します。
-
-```sh
-git init -b main
-git add .
-git status --short
-git commit -m "Initial release"
-git remote add origin https://github.com/OWNER/REPOSITORY.git
-git push -u origin main
-```
-
-アプリをブラウザーから利用できるURLで配信する場合は、ビルド後にNode.jsサーバーを実行できるホスティングが必要です。GitHub Pagesは静的配信なので、この構成の `/api/flow` を実行できません。
 
 [bitFlyer Lightning API](https://lightning.bitflyer.com/docs/api) · [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) · [GitHubのライセンスガイド](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
